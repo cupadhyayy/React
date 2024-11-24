@@ -1,0 +1,91 @@
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: rgba(255, 255, 102, 0.2);
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #4caf50;
+  margin-bottom: 30px;
+}
+
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: rgba(255, 159, 128, 0.4);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.MuiTextField-root,
+.MuiFormControl-root {
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 6px;
+}
+
+
+.MuiButton-root {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  &:hover {
+    background-color: #45a049;
+  }
+}
+
+
+input[type="file"] {
+  display: none;
+}
+
+.MuiButton-root input[type="file"]:before {
+  content: 'Choose a File';
+  color: white;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 4px;
+  background-color: #4caf50;
+  cursor: pointer;
+}
+
+.MuiButton-root input[type="file"]:hover:before {
+  background-color: #45a049;
+}
+
+.MuiSelect-root {
+  background-color: #f4f7fb;
+  color: #333;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: -15px;
+  margin-bottom: 10px;
+}
+
